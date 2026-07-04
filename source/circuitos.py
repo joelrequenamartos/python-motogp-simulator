@@ -1,0 +1,2 @@
+lista_circuitos = ["Montmeló"]
+# Resto de circuitos: "Jerez", "Le Mans", "Mugello", "Barcelona-Catalunya", "Assen", "Sachsenring", "Silverstone", "Misano", "Aragón", "Motegi", "Phillip Island", "Sepang"
