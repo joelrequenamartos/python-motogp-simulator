@@ -65,5 +65,6 @@ for circuito in circuitos:
     
     print(f"Carrera en {circuito.nombre}:")
     for nombre, datos in list(campeonato.resultados_carrera.items())[:3]:
-        print(f"{nombre}: {datos['estadistica']}")
+        print(f"{nombre}: {datos['estadistica']}.")
     print(f"\n")
+    
