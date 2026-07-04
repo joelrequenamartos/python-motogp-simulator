@@ -41,8 +41,8 @@ class Campeonato:
     def __init__(self, circuito, pilotos):
         self.circuito = circuito
         self.pilotos = pilotos
+        self.resultados_carrera = {}
 
-    resultados_carrera = {}
     def Carrera(self):
         for piloto in self.pilotos:
             piloto.estadisticas(randint(0, 100), randint(0, 100), randint(0, 100), 0)
@@ -62,5 +62,8 @@ class Campeonato:
 for circuito in circuitos:
     campeonato = Campeonato(circuito, pilotos)
     campeonato.Carrera()
+    
+    print(f"Carrera en {circuito.nombre}:")
     for nombre, datos in list(campeonato.resultados_carrera.items())[:3]:
         print(f"{nombre}: {datos['estadistica']}")
+    print(f"\n")
